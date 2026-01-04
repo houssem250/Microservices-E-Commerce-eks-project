@@ -64,19 +64,19 @@ variable "iam-role" {
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   type        = string
-  default     = "ami-0150ccaf51ab55a51" // Replace with the latest AMI ID for your region
+  default     = "ami-068c0051b15cdb816" // was "ami-0150ccaf51ab55a51" // Replace with the latest AMI ID for your region
 }
 
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t2.large"
+  default     = "t2.micro" ## was t2.large (you don't have the facilities to create it)
 }
 
 variable "key_name" {
   description = "EC2 keypair"
   type        = string
-  default     = "us-east-1"
+  default     = "vockey" #"us-east-1"
 }
 
 variable "instance_name" {
