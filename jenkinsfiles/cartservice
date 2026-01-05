@@ -38,7 +38,7 @@ pipeline {
                     sh '''
                         echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
 
-                        docker build -t ${IMAGE_FULL_NAME}:${BUILD_NUMBER} ./src/cartservice
+                        docker build -t ${IMAGE_FULL_NAME}:${BUILD_NUMBER} ./src/cartservice/src
                         docker push ${IMAGE_FULL_NAME}:${BUILD_NUMBER}
                     '''
                 }
