@@ -36,5 +36,9 @@
 
 13- ./jenkinsfiles, in each file do:
 	- replace git repo url with your own repo link
+	- replace branch name to what you have 
 	- change account id with your own aws id
 	- change your envirenment (git) credentials
+
+
+14- diffrent approach (since can't push to ecr) using docker, adservice testfile 
