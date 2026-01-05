@@ -183,7 +183,7 @@ resource "aws_eks_node_group" "node-grp" {
   subnet_ids      = [data.aws_subnet.subnet-1.id, data.aws_subnet.subnet-2.id]
   capacity_type   = "ON_DEMAND"
   disk_size       = 20
-  instance_types  = ["t2.micro"] // was t2.larges
+  instance_types  = ["t3.medium"] // was t2.micro // was t2.larges
 
   labels = {
     env = "dev"

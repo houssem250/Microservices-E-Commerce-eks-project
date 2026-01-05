@@ -17,19 +17,24 @@
 7- jnkins usrname : mouadhChain
 
 8- ./eks-terraform/main.tf:
-	- change instance type to t2.micro
+	- change instance type to t2.micro -> t3.medium
 	- chang in scaling config (2,2,1)
 	- comment out role setting/creation and policies section 
 	- comment out "depends on" for policies giving
 	- set role to "LabRole":
 		aws iam list-roles --query "Roles[].RoleName"
-	- subnet stting is st to public ???? keep as is for now 
-	- comment out "eks_oidc" section 
+	- subnet setting is set to public ???? keep as is for now 
+	- comment out "aws_iam_openid_connect_provider" section 
 
 9- ./eks-terraform/backend.tf change S3 bucket name like you set it previously
 
 10- gave the jumphost instance labrole manually using management console
 
-11- mighht ned to change eks cluster nodes instanc to t3.medium in te future 
+11- might need to change eks cluster nodes instanc to t3.medium in te future (doing it rn)
 
 12- ./ecr-terraform/backend.tf change S3 bucket name
+
+13- ./jenkinsfiles, in each file do:
+	- replace git repo url with your own repo link
+	- change account id with your own aws id
+	- change your envirenment (git) credentials
