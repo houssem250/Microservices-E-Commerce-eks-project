@@ -3,12 +3,12 @@ pipeline {
 
     environment {
         GIT_REPO_NAME = "Microservices-E-Commerce-eks-project"
-        GIT_EMAIL = "mouadhchain9@gmail.com"
-        GIT_USER_NAME = "mouadhchain9"
+        GIT_EMAIL = "leghelimihoussemeddine@gmail.com"
+        GIT_USER_NAME = "houssem250"
 
         IMAGE_NAME = "adservice"
-        DOCKERHUB_USER = "0xyz0"
-        IMAGE_FULL_NAME = "0xyz0/adservice"
+        DOCKERHUB_USER = "houssem2525"
+        IMAGE_FULL_NAME = "houssem2525/adservice"
 
         YAML_FILE = "adservice.yaml"
     }
@@ -24,7 +24,7 @@ pipeline {
         stage('Checkout from Git') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/mouadhchain9/Microservices-E-Commerce-eks-project.git'
+                    url: 'https://github.com/houssem250/Microservices-E-Commerce-eks-project.git'
             }
         }
 
