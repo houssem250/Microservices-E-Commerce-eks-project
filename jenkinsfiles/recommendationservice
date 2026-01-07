@@ -3,18 +3,6 @@ pipeline {
 
     environment {
         GIT_REPO_NAME = "Microservices-E-Commerce-eks-project"
-        GIT_EMAIL     = "mouadhchain9@gmail.com"
-        GIT_USER_NAME = "mouadhchain9"
-
-        IMAGE_NAME      = "recommendationservice"
-        DOCKERHUB_USER  = "0xyz0"
-        IMAGE_FULL_NAME = "0xyz0/recommendationservice"
-
-        YAML_FILE = "recommendationservice.yaml"
-    }
-
-    environment {
-        GIT_REPO_NAME = "Microservices-E-Commerce-eks-project"
         GIT_EMAIL = "leghelimihoussemeddine@gmail.com"
         GIT_USER_NAME = "houssem250"
 
