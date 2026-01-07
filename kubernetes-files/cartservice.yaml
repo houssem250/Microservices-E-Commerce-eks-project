@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 0xyz0/cartservice:2
+        image: houssem2525/cartservice:1
         ports:
         - containerPort: 7070
         env:
