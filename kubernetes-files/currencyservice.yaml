@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 0xyz0/currencyservice:1
+        image: houssem2525/currencyservice:1
         ports:
         - name: grpc
           containerPort: 7000
