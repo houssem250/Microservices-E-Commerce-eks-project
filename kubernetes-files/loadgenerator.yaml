@@ -42,7 +42,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 0xyz0/loadgenerator:1
+        image: houssem2525/loadgenerator:1
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -55,7 +55,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 0xyz0/loadgenerator:1
+        image: houssem2525/loadgenerator:1
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
