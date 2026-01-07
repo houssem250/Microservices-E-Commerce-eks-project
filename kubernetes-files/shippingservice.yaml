@@ -27,7 +27,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 0xyz0/shippingservice:1
+        image: houssem2525/shippingservice:1
         ports:
         - containerPort: 50051
         env:
