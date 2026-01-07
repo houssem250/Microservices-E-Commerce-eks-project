@@ -29,7 +29,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: 0xyz0/frontend:1
+          image: houssem2525/frontend:1
           ports:
           - containerPort: 8080
           readinessProbe:
