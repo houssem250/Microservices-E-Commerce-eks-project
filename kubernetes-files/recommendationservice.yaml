@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 0xyz0/recommendationservice:1
+        image: houssem2525/recommendationservice:2
         ports:
         - containerPort: 8080
         readinessProbe:
